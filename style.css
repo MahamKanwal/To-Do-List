@@ -1,6 +1,95 @@
+body{
+   
+  background-image:url(images/green.jpeg);
+   background-repeat: no-repeat;
+   background-size: 100% ;
+}
 #todo{
     font-weight: bolder;
     padding: 10px;
   background-color:green;
   color: white;
 }
+#btn{
+  border:5px solid green;
+   color:green;
+   font-size: larger;
+   font-weight: bold;
+}
+#modal{
+  background-color:transparent ;
+  
+}
+#heading{
+ color: green;
+}
+#color{
+
+  border:10px solid green;
+  border-radius: 10px;
+}
+#bgc{
+  background: transparent;
+}
+
+#userInput{
+  border:5px solid green;
+  color: aquamarine;
+}
+.color{
+  color: green;
+  background-color:aquamarine;
+  list-style:square
+  ;
+}
+.cross{
+  text-decoration:line-through;
+}
+
+li {
+  position: relative;
+  padding: 10px 80px 10px 10px; 
+  margin-bottom: 10px;
+  list-style-type: square;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+.task-content {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+/* Add some margin to the checkbox */
+.task-content input[type="checkbox"] {
+  margin-right: 10px;
+}
+.delete-btn {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+.edit-btn {
+  position: absolute;
+  right: 2px; 
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+.delete-btn:hover, .edit-btn:hover {
+  color: red; 
+}
+
+

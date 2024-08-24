@@ -2,54 +2,55 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do-List</title>
-    <link rel="shortcut icon" href="images/todo.png" type="image/x-icon">
-    <link href="bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="bootstrap.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do-List</title>
+  <link rel="shortcut icon" href="images/todo.png" type="image/x-icon">
+  <link href="bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.min.css">
 </head>
 
 <body>
 
-<div>
+  <div>
     <div>
-        <h1 id="todo"> TODO LIST 📝</h1>
+      <h1 id="todo"> TODO LIST 📝</h1>
     </div>
-</div>
+  </div>
 
-<div id="bgc" class="modal  modal-sheet position-static d-block  p-4 py-md-5" tabindex="-1" role="dialog"
+  <div id="bgc" class="modal  modal-sheet position-static d-block  p-4 py-md-5" tabindex="-1" role="dialog"
     id="modalSignin">
     <div id="color" class="modal-dialog " role="document">
       <div class="modal-content rounded-4 shadow">
         <div class="modal-header p-5 pb-4 border-bottom-0">
-            <h1 class="fw-bold mb-0 fs-2 " id="heading">Hello User!👋</h1>
+          <h1 class="fw-bold mb-0 fs-2 " id="heading">Hello User!👋</h1>
         </div>
 
         <div id="modal" class="modal-body p-5 pt-0">
           <form class="">
+
             <div class="form-floating mb-3">
               <input type="text" class="form-control rounded-3" id="userInput">
-
-            </div>
-
-            <button id="btn" class="w-100 mb-2 btn btn-lg rounded-3 " onclick="add()" type="button">Update New
-              Task</button>
-            <button id="btn"   onclick="dltAll()" class="w-100 mb-2 btn btn-lg rounded-3 " type="button">Delete
-              All</button>
-            <div>
               <ul id="list">
 
               </ul>
             </div>
+
+            <button id="btn" class="w-100 mb-2 btn btn-lg rounded-3 " onclick="add()" type="button">Update New
+              Task ✏️</button>
+            <button id="btn" onclick="dlt()" class="w-100 mb-2 btn btn-lg rounded-3 " type="button">Delete
+              All 🗑️</button>
           </form>
         </div>
       </div>
     </div>
   </div>
 
-    <script src="app.js"></script>
+
+  <script src="bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
